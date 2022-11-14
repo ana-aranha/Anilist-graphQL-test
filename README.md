@@ -14,57 +14,25 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm test`
+# Anime Organizer
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Project plans to create an application that organizes your list of anime into categories (watching, completed, plan to watch and dropped),using the Anilist database as a base (https://github.com/AniList/ApiV2-GraphQL-Docs).
 
-### `npm run build`
+- This application was a modification of what can be read in https://codebushi.com/posts/graphql-api-with-react.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# How to run for development
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1 - Clone this repository;
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2 - Install all dependencies;
 
-### `npm run eject`
+3- Run "npm start" to start application
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Changing Variables to search anime information
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- By definition the project will render the 50 most popular anime according to Anilist's list. In the console you will see information for each of them. When clicking on an image, the specific information of the clicked anime will also appear on the console.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- In the App.js file, on line 69 you will see a variable named "variables". By removing the commented out line 70, you can change the string of "search" to an anime name you want to search for.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- By modifying the string on line 70, the application will render the equivalent results on the screen. By clicking on the image equivalent to your search, you will be able to see on the console some information about the searched anime. Among them the equivalent id.
